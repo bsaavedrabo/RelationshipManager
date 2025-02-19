@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 1 - Enter Family Info</title>
+</head>
+<body>
+
+    <h1>Relationship Manager</h1>
+
+    <form id="familyForm" action="/save-names" method="POST">
+        <label for="age">Enter your age:</label><br>
+        <input type="text" id="age" name="age" required><br><br/>
+        
+        <label for="fnames">Enter the names of your family members (separated by commas):</label><br>
+        <input type="text" id="fnames" name="fnames" required><br><br/>
+        
+        <button type="submit">Save Names and Go to Step 2</button>
+    </form>
+    
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            background-color: #f4f4f4; 
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+
+</body>
+</html>
